@@ -136,4 +136,7 @@ export default {
       width: 1600px;
 
 }
+h3 , h2{
+  padding: 10px;
+}
 </style>

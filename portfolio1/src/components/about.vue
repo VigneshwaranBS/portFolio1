@@ -16,16 +16,16 @@
       </div>
       <div class="right">
         <h2>Full Stack Devloper</h2>
-        <p>
+        <p class="text--secondary">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, esse
           voluptatum? Quo numquam incidunt aut, voluptates doloribus expedita
           eum, error nostrum consequatur molestias, temporibus facilis.
         </p>
-        <p>
+        <p class="text--secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           error eum atque soluta veritatis dolores rem qui quidem dolor nulla.
         </p>
-        <p>
+        <p class="text--secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere
           suscipit in ducimus quos dignissimos minus soluta ipsum rem expedita,
           ipsa totam eos, veritatis et.
@@ -46,16 +46,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .heading {
-  h1,
-  p {
+  h1
+   {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: red;
+    padding-top: 20px;
+  }
+  p{
+      text-align: center;
+      padding-top: 20px;
   }
 }
 .container {
   display: flex;
   justify-content: space-around;
+  .right{
+    padding-left: 50px;
+    h2{
+      padding-bottom: 15px;
+    }
+  }
 }
 </style>
