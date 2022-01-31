@@ -6,7 +6,7 @@
       dark
     >
       <div class="d-flex align-center">
-       <h1>VICKY</h1>
+       <h1 class="black--text">VICKY</h1>
 
       
       </div>
