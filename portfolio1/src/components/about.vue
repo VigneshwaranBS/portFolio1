@@ -31,6 +31,9 @@
           ipsa totam eos, veritatis et.
         </p>
         <v-btn class="ma-2 rounded-pill  " outlined color="red black--text"> Read More </v-btn>
+
+
+  
       </div>
     </div>
   </main>
