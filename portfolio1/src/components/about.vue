@@ -56,6 +56,7 @@ export default {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: red;
+      text-underline-offset:15px;
     padding-top: 20px;
   }
   p{
