@@ -74,16 +74,44 @@
         <h2 class="white--text">VIGNESHWARAN BS</h2>
         <h3 class="orange--text">I AM FULL STACK DEVELOPER.</h3>
         <div class="icon">
-          <v-btn class="ma-2" outlined fab color="white">
+          <v-btn
+            class="ma-2"
+            outlined
+            fab
+            color="white"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
             <v-icon>mdi-facebook</v-icon>
           </v-btn>
-          <v-btn class="ma-2" outlined fab color="white">
+          <v-btn
+            class="ma-2"
+            outlined
+            fab
+            color="white"
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
             <v-icon>mdi-linkedin</v-icon>
           </v-btn>
-          <v-btn class="ma-2" outlined fab color="white">
+          <v-btn
+            class="ma-2"
+            outlined
+            fab
+            color="white"
+            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+            target="_blank"
+          >
             <v-icon> mdi-twitter</v-icon>
           </v-btn>
-          <v-btn class="ma-2" outlined fab color="white">
+          <v-btn
+            class="ma-2"
+            outlined
+            fab
+            color="white"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
             <v-icon>mdi-instagram</v-icon>
           </v-btn>
         </div>
@@ -121,5 +149,4 @@ h3,
 h2 {
   padding: 10px;
 }
-
 </style>

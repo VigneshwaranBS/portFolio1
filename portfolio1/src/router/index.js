@@ -6,6 +6,7 @@ import home from '../views/home.vue'
 import about from '../views/about.vue'
 import what from '../views/what.vue'
 import recentProject from '../views/recentProject.vue'
+import client from '../views/client.vue'
 import contact from '../views/contact.vue'
 
 Vue.use(VueRouter)
@@ -32,7 +33,12 @@ const routes = [
     component: recentProject
   },
   {
-    path: '/Contact',
+    path: '/client',
+    name: 'client',
+    component: client
+  },
+  {
+    path: '/contact',
     name: 'contact',
     component: contact
   },

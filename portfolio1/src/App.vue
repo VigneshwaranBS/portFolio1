@@ -1,15 +1,9 @@
 <template>
   <v-app>
-    <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-    <!-- <home />
-    <about />
-    <what />
-    <recent-project />
-    <contact /> -->
+    
     <v-card class="mx-auto overflow-hidden" height="700" width="1600">
       <v-app-bar color="black" dark class="elevation-1">
-        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="drawer = true"> </v-app-bar-nav-icon>
         <v-avatar>
           <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="vignesh" />
         </v-avatar>
@@ -31,6 +25,9 @@
           <v-btn class="elevation-0 ml-1 white--text" text href="/recentProject"
             >Recent project</v-btn
           >
+           <v-btn class="elevation-0 ml-1 white--text" text href="/client"
+            >Client</v-btn
+          >
           <v-btn class="elevation-0 ml-1 white--text" text href="/contact"
             >Contact</v-btn
           >
@@ -41,7 +38,7 @@
           v-model="drawer"
           absolute
           temporary
-          class="deep-purple accent-4"
+          class="orange darken-2"
         >
           <v-list nav dense>
             <v-list-item-group
@@ -76,7 +73,15 @@
                   >Recent Project</v-list-item-title
                 >
               </v-list-item>
-              <v-list-item class="mt-5" href="/contact">
+              <v-list-item class="mt-5" href="/client">
+                <v-list-item-icon>
+                  <v-icon class="white--text">description</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title class="white--text"
+                  >Client</v-list-item-title
+                >
+              </v-list-item>
+                <v-list-item class="mt-5" href="/contact">
                 <v-list-item-icon>
                   <v-icon class="white--text">contact_page</v-icon>
                 </v-list-item-icon>
@@ -88,27 +93,35 @@
           </v-list>
         </v-navigation-drawer>
       </div>
+
       <router-view />
     </v-card>
+    <about />
+    <what />
+    <recentProject />
+    <client />
+    <contact/>
   </v-app>
 </template>
 
 <script>
 // import home from "./components/home.vue";
-// import about from "./components/about.vue";
-// import what from "./components/what.vue";
-// import recentProject from "./components/recentProject.vue";
-// import contact from "./components/contact.vue";
+import about from "./views/about.vue";
+import what from "./views/what.vue";
+import recentProject from "./views/recentProject.vue";
+import client from "./views/client.vue";
+import contact from './views/contact.vue';
 
 export default {
   name: "app",
-  // components: {
-  //   home,
-  //   about,
-  //   what,
-  //   recentProject,
-  //   contact,
-  // },
+  components: {
+    // home,
+    about,
+    what,
+    recentProject,
+    client,
+    contact,
+  },
   data: () => ({
     drawer: false,
     group: null,
@@ -127,5 +140,6 @@ export default {
   .nav-content {
     display: none;
   }
+ 
 }
 </style>
