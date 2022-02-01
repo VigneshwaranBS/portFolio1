@@ -1,18 +1,18 @@
 <template>
   <main>
     <v-card class="mx-auto overflow-hidden" height="700">
-      <v-app-bar color="black" dark class="elevation-1">
+      <!-- <v-app-bar color="black" dark class="elevation-1">
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-        <v-toolbar-title><span class="red--text font-weight-black text-h3">V</span> IGNESH</v-toolbar-title>
+        <v-toolbar-title> <v-btn href="/" text> <span class="red--text font-weight-black text-h3">V</span > IGNESH </v-btn></v-toolbar-title>
         <v-spacer></v-spacer>
 
         <div class="nav-content">
           <v-btn class="elevation-0 ml-1 white--text" text >Home</v-btn>
           <v-btn class="elevation-0 ml-1 white--text" text href="/about">About</v-btn>
-          <v-btn class="elevation-0 ml-1 white--text" text>My work</v-btn>
-          <v-btn class="elevation-0 ml-1 white--text" text>Recent project</v-btn>
-          <v-btn class="elevation-0 ml-1 white--text" text>Contact</v-btn>
+          <v-btn class="elevation-0 ml-1 white--text" text href="/what">My work</v-btn>
+          <v-btn class="elevation-0 ml-1 white--text" text href="/recentProject">Recent project</v-btn>
+          <v-btn class="elevation-0 ml-1 white--text" text href="/contact">Contact</v-btn>
           
         </div>
       </v-app-bar>
@@ -35,13 +35,13 @@
                 </v-list-item-icon>
                 <v-list-item-title class="white--text">Home</v-list-item-title>
               </v-list-item>
-              <v-list-item class="mt-5">
-                <v-list-item-icon>
+              <v-list-item class="mt-5"  href="/about">
+                <v-list-item-icon  > 
                   <v-icon class="white--text">info</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title class="white--text">About</v-list-item-title>
               </v-list-item>
-              <v-list-item class="mt-5">
+              <v-list-item class="mt-5"  href="/what"> 
                 <v-list-item-icon>
                   <v-icon class="white--text">work</v-icon>
                 </v-list-item-icon>
@@ -49,7 +49,7 @@
                   >My Work</v-list-item-title
                 >
               </v-list-item>
-              <v-list-item class="mt-5">
+              <v-list-item class="mt-5"  href="/recentProject">
                 <v-list-item-icon>
                   <v-icon class="white--text">business</v-icon>
                 </v-list-item-icon>
@@ -57,7 +57,7 @@
                   >Recent Project</v-list-item-title
                 >
               </v-list-item>
-              <v-list-item class="mt-5">
+              <v-list-item class="mt-5"  href="/contact">
                 <v-list-item-icon>
                   <v-icon class="white--text">contact_page</v-icon>
                 </v-list-item-icon>
@@ -68,7 +68,7 @@
             </v-list-item-group>
           </v-list>
         </v-navigation-drawer>
-      </div>
+      </div> -->
 
       <div class="content">
         <h2 class="white--text">VIGNESHWARAN BS</h2>
@@ -121,16 +121,5 @@ h3,
 h2 {
   padding: 10px;
 }
-.v-btn :hover{
-  color: red;
-}
-.v-btn :active{
-  color: skyblue;
-}
-@media   (max-width: 768px) {
 
-  .nav-content{
-    display: none;
-  }
-}
 </style>
