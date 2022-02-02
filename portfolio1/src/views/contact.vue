@@ -14,7 +14,7 @@
             <v-text-field
               v-model="name"
               label="Full Name"
-              placeholder="John Doe"
+              placeholder="Enter Name"
               required
             ></v-text-field>
 
